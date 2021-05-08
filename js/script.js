@@ -1,3 +1,11 @@
+// Menu data structure
+var menuLinks = [
+  {text: 'about', href: '/about'},
+  {text: 'catalog', href: '/catalog'},
+  {text: 'orders', href: '/orders'},
+  {text: 'account', href: '/account'},
+];
+
 // Task 1.0
 const mainEl = document.querySelector('main');
 
@@ -22,6 +30,15 @@ topMenuEl.style.background = 'var(--top-menu-bg)';
 
 // Task 2.3
 topMenuEl.classList.add('flex-around');
+
+//Task 3.1
+menuLinks.forEach(function(link) {
+  const a = document.createElement('a');
+  a.href = link.href;
+  a.innerHTML = link.text;
+  topMenuEl.appendChild(a);
+
+});
 
 // debug
 console.log(mainEl);
