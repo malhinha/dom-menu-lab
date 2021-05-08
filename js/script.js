@@ -40,6 +40,20 @@ menuLinks.forEach(function(link) {
 
 });
 
-// debug
-console.log(mainEl);
-console.log(topMenuEl);
+// Task 4.0
+const subMenuEl = document.getElementById('sub-menu');
+
+// Task 4.1
+subMenuEl.style.height = '100%';
+
+// Task 4.2
+subMenuEl.style.background = 'var(--sub-menu-bg)';
+
+// Task 4.3
+subMenuEl.classList.add('flex-around');
+
+// Task 4.4
+subMenuEl.style.position = 'absolute';
+
+// Task 4.5
+subMenuEl.style.top = 0;
